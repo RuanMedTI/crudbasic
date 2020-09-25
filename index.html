@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Cadastro
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="menu-principal">
+
+    <main> 
+    <div class="header1"> 
+        <div class="logo">
+            <img src="./img/logo.png"/>
+        </div>
+    </div>
+        <main class="coluna100 menu-urls">
+        
+    
+    <div class="header2">
+            <div class="menu">
+                <ul>
+                    <li><a href="sec.html">Início</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    </main>
+</header>
+
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Id</label><label class="validation-error hide" id="idenValidationError">This field is required.</label>
+                        <input type="text" name="iden" id="iden">
+                    </div>
+                    <div>
+                        <label>Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label>Data de Nascimento</label>
+                        <input type="date" name="nascimento" id="nascimento">
+                    </div>
+                    <div>
+                        <label>Data de Cadastro</label>
+                        <input type="date" name="cadastro" id="cadastro">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Cadastrar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Data de Nascimento</th>
+                            <th>Data de Cadastro</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
